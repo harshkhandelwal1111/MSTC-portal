@@ -1,0 +1,24 @@
+#parent{
+ margin: 10% auto;
+ border: 2px solid grey;
+ box-shadow: 2px;
+}
+#header{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#perinfo{
+    text-align: center;
+    margin-top: 1%;
+}
+ .g-recaptcha{
+     margin-left: 15%;
+     margin-bottom: 5%;
+ }
+
+ .control{
+     margin-bottom: 5%;
+     margin-left: 40%;
+ }
+
