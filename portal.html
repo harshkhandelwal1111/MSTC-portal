@@ -1,0 +1,106 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Index Page</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="portal.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+<body>
+       
+        <div class="container container-fluid col-md-4 col-sm-12" id="parent">
+         <form method="POST" id="regForm">
+             <div id="comp1" style="display:block">
+                 <p id="perinfo"> Personal information</p>
+                 <div class="form-group" style="width:100%">
+                    <label for="Name input">Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+                 </div>
+                 <div class="form-group" style="width:100%">
+                        <label for="RegNo input">Name</label>
+                        <input type="text" class="form-control" id="regno" aria-describedby="nameHelp" placeholder="Enter Registration Number">
+                 </div>
+                 <div class="form-group" style="width:100%">
+                        <label for="email input">Email</label>
+                        <input type="Email" class="form-control" id="email" aria-describedby="nameHelp" placeholder="Enter Email-Id">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                 </div>
+                 <div class="form-group" style="width:100%">
+                        <label for="phone number input">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="Enter Phone Number">
+                 </div>
+                 <div class="g-recaptcha col-md-4" data-sitekey="6Lfssn4UAAAAALctV-0zChSFTJoc7Gbx7B_x2sfi" style="margin-left:15%; margin-top: 10%">
+                 </div>
+             </div>
+
+             <div id="comp2" style="display:none">
+                    <p id="perinfo" style="margin-top:8%">Let's get to know you more</p>
+                    <div class="form-group" style="width:100%; margin-top: 2%">
+                       <label for="info">Tell us more about you</label>
+                       <textarea class="form-control" id="info" aria-describedby="textHelp"></textarea>
+                    </div>
+                    <div class="form-group" style="width:100%; margin-top: 8%">
+                           <label for="why">Why do you want to join MSTC</label>
+                           <textarea class="form-control" id="why" aria-describedby="ehyHelp"></textarea>
+                    </div>
+                    <div class="form-group" style="width:100%; margin-top:8%">
+                           <label for="technologies">What are microsoft technologies</label>
+                           <textarea class="form-control" id="tech" aria-describedby="techHelp"></textarea>
+                    </div>
+                    
+             </div>
+
+
+             <div id ="comp3" style="display:none">
+                    <p id="perinfo" style="margin-top: 8%">Some boasting?</p>
+                    <div class="form-group" style="width:100%; margin-top: 5%">
+                       <label for="git input">Github?</label>
+                       <input type="text" class="form-control" id="git" aria-describedby="nameHelp" placeholder="Enter your github handle">
+                    </div>
+                    <div class="form-group" style="width:100%; margin-top:5%">
+                           <label for="dribble input">Behance or dribble?</label>
+                           <input type="text" class="form-control" id="dribble" aria-describedby="nameHelp">
+                    </div>
+                    <div class="form-group" style="width:100% ;margin-top:5%">
+                           <label for="experience input">Any previous experiences in any field?</label>
+                           <input type="text" class="form-control" id="experience" aria-describedby="nameHelp" placeholder="Your experiences....">
+                    </div>
+                    <div class="form-group" style="width:100%;margin-top:5%">
+                           <label for="skill input">Any particular skill you would want us to know about?</label>
+                           <input type="text" class="form-control" id="skill" aria-describedby="phoneHelp">
+                    </div>
+                
+             </div>
+         </form>
+         <button type="button" id="change" class="btn btn-outline-primary control">Next</button>
+        </div>
+       <!-- The Modal -->
+       <div id="myModal" class="modal">
+
+       <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                     <span class="close">&times;</span>
+                     <h2></h2>
+                </div>
+                <div class="modal-body">
+                      <p id="modpara">Thank You for registration</p>
+                      <p id="modpara2">Keep an eye on your mail for further details</p>
+                </div>
+                <div class="modal-footer">
+                <h3></h3>
+                </div>
+              </div>
+       
+     </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <script type="text/javascript" src="./portal.js"></script>
+</body>
+</html>
